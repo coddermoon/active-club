@@ -2,6 +2,8 @@
     {
         "id": "63348e1ec08748f25d54e9b3",
         "name": "Mathmatics",
+        "description":"hello description how are you",
+       
         "img":"https://img.freepik.com/free-vector/maths-chalkboard_23-2148178219.jpg",
         "duration": 40
     
@@ -10,6 +12,7 @@
     {
         "id": "a3348e1ec08748f25d54e9b3",
         "name": "chemistry",
+        "description":"hello description how are you",
         "img":"https://img.freepik.com/free-vector/chemistry_23-2148153742.jpg",
         "duration": 40
     
@@ -17,6 +20,7 @@
     {
         "id": "a3348e19c08748f25d54e9b3",
         "name": "English",
+        "description":"hello description how are you",
         "img":"https://img.freepik.com/free-vector/english-teacher-concept-illustration_114360-7477.jpg",
         "duration": 40
     
