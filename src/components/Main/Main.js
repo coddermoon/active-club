@@ -5,7 +5,7 @@ import Subjects from "../Subjects/Subjects";
 
 
 const Main = () => {
-  const [isDisabled, setIsDisabled] = useState(false);
+
 
   
 // load data
@@ -22,23 +22,23 @@ useEffect(()=>{
 const handleAddBtn = (dur)=>{
   
   const newDurArr = [...addDuration,dur]
-  setIsDisabled(true);
+
 
   setAddDuration(newDurArr)
+
 
 }
 const totalAdded = addDuration.reduce((partial,current)=>partial+current,0)
 
 
+
   return (
     <div className="main grid  grid-cols-12 gap-4">
-     
       <div className="content col-span-9">
         <Subjects 
         key={subjects.id}
         subjects={subjects}
         handleAddBtn={handleAddBtn}
-        isDisabled={isDisabled}
         />
       </div>
       <div className="aside bg-white shadow-lg p-5 col-span-3">

@@ -6,7 +6,7 @@ const [time,setTime]=useState(0)
 
   const handleBreakTime=(time)=>{
     localStorage.setItem('break',time)
-setTime(time)
+    setTime(time)
 
   }
   useEffect(()=>{
