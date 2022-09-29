@@ -12,7 +12,7 @@
     {
         "id": "a3348e1ec08748f25d54e9b3",
         "name": "chemistry",
-        "description" : "hello description how are you",
+    
         "img":"https://img.freepik.com/free-vector/chemistry_23-2148153742.jpg",
         "duration": 40,
         "description":"Chemistry is the branch of science that deals with the properties, composition, and structure of elements and compounds ..."
@@ -21,8 +21,35 @@
     {
         "id": "a3348e19c08748f25d54e9b3",
         "name": "English",
-        "description":"hello description how are you",
+       
         "img":"https://img.freepik.com/free-vector/english-teacher-concept-illustration_114360-7477.jpg",
+        "duration": 40,
+        "description": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England."
+    
+      },
+    {
+        "id": "a348e19c08748f25d54e9b3",
+        "name": "Computer Science",
+      
+        "img":"https://img.freepik.com/free-vector/programmer-working-isometric-style_52683-16729.jpg",
+        "duration": 40,
+        "description": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England."
+    
+      },
+    {
+        "id": "a348e19c08748f254e9b3",
+        "name": "Practice Time",
+       
+        "img":"https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg",
+        "duration": 40,
+        "description": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England."
+    
+      },
+    {
+        "id": "a348ssee19c08748f254e9b3",
+        "name": "Article Writting",
+     
+        "img":"https://img.freepik.com/free-vector/publish-article-concept-illustration_114360-4926.jpg",
         "duration": 40,
         "description": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England."
     

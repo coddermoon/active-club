@@ -1,4 +1,5 @@
 import React from "react";
+import BreakBtn from "../BreakBtn/BreakBtn";
 
 const Details = () => {
   return (
@@ -7,7 +8,7 @@ const Details = () => {
         <div className="img ">
           <img
             className="h-12 w-12 rounded-full "
-            src="https://tailwindcss.com/_next/static/media/sarah-dayan.a620c98f.jpg"
+            src="https://scontent.fdac68-1.fna.fbcdn.net/v/t39.30808-6/272160991_140324801743980_7748238149535044986_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHpiPKDMpgaNatTdGt-3ETl3SCo5u9lO77dIKjm72U7vhbuN4ubSWoOfbvklkUxeCUYOv_Luiz7LxSoNuM2XplN&_nc_ohc=QVD2VrzrLIIAX8WiLP8&tn=Mmm6LXdW5ME4KYL2&_nc_zt=23&_nc_ht=scontent.fdac68-1.fna&oh=00_AT_0O0XxWu6OPNM_3K0oL6GkvPtDO212iu6WzQYDdgG8Sg&oe=63398DBD"
             alt=""
           />
         </div>
@@ -70,6 +71,12 @@ const Details = () => {
        
       
       </div>
+      {/* breaking times */}
+
+    <div className="break">
+        <h2 className="text-2xl font-medium text-gray-600">Add A Break</h2>
+        <BreakBtn/>
+    </div>
       
     </div>
   );
