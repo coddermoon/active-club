@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Subject = (props) => {
-  const {subject,handleAddBtn}=props;
+  const {subject,handleAddBtn,isDisabled}=props;
  
 
     const {name,img,description,duration}= subject
@@ -20,9 +20,12 @@ const Subject = (props) => {
       <div className="badge badge-secondary badge-outline">{duration} min</div>
      
     </div>
-    <button onClick={()=>{
+    <button 
+    disabled={isDisabled}
+    onClick={()=>{
   
       handleAddBtn(duration)
+     
  
     }}
        className='bg-violet-400 py-2 cursor-pointer shadow  rounded text-white mt-2' >Add To List</button>

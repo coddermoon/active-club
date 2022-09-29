@@ -1,13 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BreakBtn from "../BreakBtn/BreakBtn";
 
 const Details = ({totalAdded}) => {
 const [time,setTime]=useState(0)
 
   const handleBreakTime=(time)=>{
+    localStorage.setItem('break',time)
 setTime(time)
 
   }
+  useEffect(()=>{
+const storedBreakTime =localStorage.getItem('break')
+const breakTime = JSON.parse(storedBreakTime)
+setTime(breakTime)
+  },[time])
  
   return (
     <div className="sticky top-5">

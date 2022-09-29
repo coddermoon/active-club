@@ -5,7 +5,7 @@ import Subjects from "../Subjects/Subjects";
 
 
 const Main = () => {
-
+  const [isDisabled, setIsDisabled] = useState(false);
 
   
 // load data
@@ -22,7 +22,7 @@ useEffect(()=>{
 const handleAddBtn = (dur)=>{
   
   const newDurArr = [...addDuration,dur]
-console.log(newDurArr)
+  setIsDisabled(true);
 
   setAddDuration(newDurArr)
 
@@ -38,6 +38,7 @@ const totalAdded = addDuration.reduce((partial,current)=>partial+current,0)
         key={subjects.id}
         subjects={subjects}
         handleAddBtn={handleAddBtn}
+        isDisabled={isDisabled}
         />
       </div>
       <div className="aside bg-white shadow-lg p-5 col-span-3">
