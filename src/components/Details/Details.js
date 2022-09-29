@@ -74,8 +74,10 @@ const Details = () => {
       {/* breaking times */}
 
     <div className="break">
-        <h2 className="text-2xl font-medium text-gray-600">Add A Break</h2>
+        <h2 className="text-2xl font-medium text-gray-600 ">Add A Break</h2>
+        <div className="breakBtn">
         <BreakBtn/>
+        </div>
     </div>
       
     </div>
