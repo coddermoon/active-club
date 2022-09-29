@@ -17,7 +17,7 @@ const Details = () => {
           <div className="text-gray-400  flex">
             <span className=" inline-block">
               <svg
-                class="w-6 h-6"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -109,7 +109,7 @@ const Details = () => {
           </div>
         </div>
       </div>
-      <button class="bg-violet-400 py-2 cursor-pointer shadow w-full  rounded text-white mt-2">Completed Activity</button>
+      <button className="bg-violet-400 py-2 cursor-pointer shadow w-full  rounded text-white mt-2">Completed Activity</button>
     </div>
   );
 };

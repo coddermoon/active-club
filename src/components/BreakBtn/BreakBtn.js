@@ -6,7 +6,7 @@ const BreakBtn = () => {
     return (
         <div className=' flex items-center justify-between my-5'>
             {
-              dur.map(time=>   <button class="badge badge-secondary badge-outline   py-3 px-3"> {time} min</button>)
+              dur.map(time=>   <button className="badge badge-secondary badge-outline   py-3 px-3"> {time} min</button>)
             }
            
          

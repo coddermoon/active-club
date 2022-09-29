@@ -2,7 +2,11 @@ import React from 'react';
 import Subject from '../Subject/Subject';
 
 
-const Subjects = ({subjects}) => {
+const Subjects = ({subjects,handleAddBtn}) => {
+
+  
+
+
    
  
     return (
@@ -15,6 +19,7 @@ const Subjects = ({subjects}) => {
                subjects.map(subject=><Subject 
                key={subject.id}
                subject={subject}
+               handleAddBtn={handleAddBtn}
                />)
             }
               
