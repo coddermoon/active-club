@@ -25,12 +25,14 @@ const handleAddBtn = (dur)=>{
 console.log(newDurArr)
 
   setAddDuration(newDurArr)
+
 }
 const totalAdded = addDuration.reduce((partial,current)=>partial+current,0)
 
 
   return (
     <div className="main grid  grid-cols-12 gap-4">
+     
       <div className="content col-span-9">
         <Subjects 
         key={subjects.id}

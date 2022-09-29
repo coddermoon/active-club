@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import BreakBtn from "../BreakBtn/BreakBtn";
 
 const Details = ({totalAdded}) => {
+const [time,setTime]=useState(0)
+
+  const handleBreakTime=(time)=>{
+setTime(time)
+
+  }
  
   return (
     <div className="sticky top-5">
@@ -75,7 +81,9 @@ const Details = ({totalAdded}) => {
       <div className="break">
         <h2 className="text-2xl font-medium text-gray-600 ">Add A Break</h2>
         <div className="breakBtn">
-          <BreakBtn />
+          <BreakBtn 
+          handleBreakTime={handleBreakTime}
+          />
         </div>
       </div>
       {/* exercise details */}
@@ -103,7 +111,7 @@ const Details = ({totalAdded}) => {
               <div className="flex items-center justify-between my-3 px-4">
                 <p className="text-xl font-medium text-gray-700">Break :</p>
                 <p className="font-medium">
-                  300 <span className="text-sm font-mono">min</span>
+                  {time} <span className="text-sm font-mono">min</span>
                 </p>
               </div>
             </div>
