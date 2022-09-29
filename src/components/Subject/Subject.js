@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Subject = (props) => {
-  const {subject,handleAddBtn,isDisabled}=props;
+  const[disable,setDisable] =useState(false)
+  const {subject,handleAddBtn}=props;
  
 
     const {name,img,description,duration}= subject
@@ -21,9 +22,9 @@ const Subject = (props) => {
      
     </div>
     <button 
-    disabled={isDisabled}
+ disabled={disable}
     onClick={()=>{
-  
+      setDisable(true)
       handleAddBtn(duration)
      
  

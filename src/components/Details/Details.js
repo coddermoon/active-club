@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import BreakBtn from "../BreakBtn/BreakBtn";
 
+import Swal from "sweetalert2";
 const Details = ({totalAdded}) => {
+ 
+
 const [time,setTime]=useState(0)
 
   const handleBreakTime=(time)=>{
@@ -17,7 +20,7 @@ setTime(breakTime)
  
   return (
     <div className="sticky top-5">
-      <div className="profile flex gap-3">
+      <div className="profile flex flex-wrap gap-3">
         <div className="img ">
           <img
             className="h-12 w-12 rounded-full "
@@ -27,7 +30,7 @@ setTime(breakTime)
         </div>
         <div className="info">
           <h4 className="text-lg font-medium">Mahamodul Hasan</h4>
-          <div className="text-gray-400  flex">
+          <div className="text-gray-400  flex flex-wrap">
             <span className=" inline-block">
               <svg
                 className="w-6 h-6"
@@ -56,7 +59,7 @@ setTime(breakTime)
       </div>
       {/* info card */}
 
-      <div className="info-cards  flex justify-around">
+      <div className="info-cards   flex flex-wrap justify-around">
         <div className="rounded shadow-lg bg-[#F8FAFC]  m-2 p-2">
           <p>
             <span className="text-4xl">75</span>
@@ -102,7 +105,7 @@ setTime(breakTime)
           {/*input 1 */}
           <div className="exercise-time">
             <div className="rounded  bg-[#d9e2ec]  m-2 p-2 my-5">
-              <div className="flex items-center justify-between my-3 px-4">
+              <div className="flex flex-wrap items-center justify-between my-3 px-4">
                 <p className="text-xl font-medium text-gray-700">
                   Total Activity : 
                 </p>
@@ -114,7 +117,7 @@ setTime(breakTime)
           </div>
           <div className="break-time">
             <div className="rounded  bg-[#d9e2ec]  m-2 p-2 my-5">
-              <div className="flex items-center justify-between my-3 px-4">
+              <div className="flex flex-wrap items-center justify-between my-3 px-4">
                 <p className="text-xl font-medium text-gray-700">Break :</p>
                 <p className="font-medium">
                   {time} <span className="text-sm font-mono">min</span>
@@ -124,7 +127,16 @@ setTime(breakTime)
           </div>
         </div>
       </div>
-      <button className="bg-violet-400 py-2 cursor-pointer shadow w-full  rounded text-white mt-2">Completed Activity</button>
+      <button className="bg-violet-400 py-2 cursor-pointer shadow w-full  rounded text-white mt-2" onClick={() => {
+                Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'Succrssfully done your task',
+                  showConfirmButton: false,
+                  timer: 1500
+                })
+            }}>Completed Activity</button>
+           
     </div>
   );
 };
