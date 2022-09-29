@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Accordion = () => {
 
     const question= [
@@ -18,14 +19,21 @@ const Accordion = () => {
         }
     ]
 
+ 
+
     return (
 
-        <div className='flex justify-around gap-4'>
+        <div className='flex justify-around flex-wrap gap-4'>
             {
-                question.map(ques=><button className='bg-violet-800 py-5 px-12 text-white font-xl  '>{ques.question}</button>)
+                question.map(ques => <div className='shadow-xl text-center '>
+                    <button className='bg-violet-800 py-5 px-12 text-white font-xl  '>{ques.question}</button>
+                    <p>{ques.Ans}</p>
+                </div>)
             }
 
+
         </div>
+        
     );
 };
 
