@@ -3,7 +3,7 @@ import BreakBtn from "../BreakBtn/BreakBtn";
 
 const Details = () => {
   return (
-    <div>
+    <div className="sticky top-5">
       <div className="profile flex gap-3">
         <div className="img ">
           <img
@@ -68,18 +68,48 @@ const Details = () => {
           <p className="text-2xl text-violet-600">Age</p>
         </div>
         {/*  */}
-       
-      
       </div>
       {/* breaking times */}
 
-    <div className="break">
+      <div className="break">
         <h2 className="text-2xl font-medium text-gray-600 ">Add A Break</h2>
         <div className="breakBtn">
-        <BreakBtn/>
+          <BreakBtn />
         </div>
-    </div>
-      
+      </div>
+      {/* exercise details */}
+
+      <div className="activity-details">
+        <h2 className="text-2xl font-medium text-gray-600 ">
+          Activity Details
+        </h2>
+        <div className="showDetails">
+          {/*input 1 */}
+          <div className="exercise-time">
+            <div className="rounded  bg-[#d9e2ec]  m-2 p-2 my-5">
+              <div className="flex items-center justify-between my-3 px-4">
+                <p className="text-xl font-medium text-gray-700">
+                  Total Activity :
+                </p>
+                <p className="font-medium">
+                  300 <span className="text-sm font-mono">min</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="break-time">
+            <div className="rounded  bg-[#d9e2ec]  m-2 p-2 my-5">
+              <div className="flex items-center justify-between my-3 px-4">
+                <p className="text-xl font-medium text-gray-700">Break :</p>
+                <p className="font-medium">
+                  300 <span className="text-sm font-mono">min</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="bg-violet-400 py-2 cursor-pointer shadow w-full  rounded text-white mt-2">Completed Activity</button>
     </div>
   );
 };
