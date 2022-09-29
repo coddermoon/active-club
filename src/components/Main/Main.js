@@ -9,7 +9,7 @@ const Main = () => {
 
   
 // load data
-const [addDuration,setDuration]= useState(0)
+const [addDuration,setAddDuration]= useState([])
 const [subjects,setSubjects]= useState([])
 useEffect(()=>{
   fetch('./data/data.json')
@@ -18,15 +18,16 @@ useEffect(()=>{
   
 },[])
 
-let duration= 0;
+
 const handleAddBtn = (dur)=>{
   
-  duration = addDuration + dur
+  const newDurArr = [...addDuration,dur]
+console.log(newDurArr)
 
-
-  setDuration(duration)
+  setAddDuration(newDurArr)
 }
-console.log(duration);
+const totalAdded = addDuration.reduce((partial,current)=>partial+current,0)
+
 
   return (
     <div className="main grid  grid-cols-12 gap-4">
@@ -39,7 +40,7 @@ console.log(duration);
       </div>
       <div className="aside bg-white shadow-lg p-5 col-span-3">
         <Details
-       
+       totalAdded={totalAdded}
         
         />
       </div>

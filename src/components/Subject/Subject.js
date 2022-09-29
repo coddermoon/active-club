@@ -20,7 +20,12 @@ const Subject = (props) => {
       <div className="badge badge-secondary badge-outline">{duration} min</div>
      
     </div>
-    <button onClick={()=>handleAddBtn(duration)} className='bg-violet-400 py-2 cursor-pointer shadow  rounded text-white mt-2' >Add To List</button>
+    <button onClick={()=>{
+  
+      handleAddBtn(duration)
+ 
+    }}
+       className='bg-violet-400 py-2 cursor-pointer shadow  rounded text-white mt-2' >Add To List</button>
   </div>
 </div>
     );
