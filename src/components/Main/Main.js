@@ -16,14 +16,14 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className="main grid  grid-cols-5 gap-4">
-      <div className="content col-span-4">
+    <div className="main grid  grid-cols-12 gap-4">
+      <div className="content col-span-9">
         <Subjects 
         key={subjects.id}
         subjects={subjects}
         />
       </div>
-      <div className="aside bg-white shadow-lg p-5">
+      <div className="aside bg-white shadow-lg p-5 col-span-3">
         <Details />
       </div>
     </div>
